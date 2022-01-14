@@ -120,8 +120,8 @@ function butotnClick(){
 				betweenHourSecond=outHour-8;
 				betweenMinuteSecond=outMinute;
 				/*
-				console.log(`駐車時間(0時から8時)：${betweenHourFirst}時間${betweenMinuteFirst}分`);
-				console.log(`駐車時間(8時から20時)：${betweenHourSecond}時間${betweenMinuteSecond}分`);*/
+				console.log(`駐車時間(0時から8時):${betweenHourFirst}時間${betweenMinuteFirst}分`);
+				console.log(`駐車時間(8時から20時):${betweenHourSecond}時間${betweenMinuteSecond}分`);*/
 				
 				priceFirst=betweenHourFirst*100+100;
 				if(betweenMinuteSecond<30){
@@ -142,9 +142,9 @@ function butotnClick(){
 				betweenHourThird=outHour-20;
 				betweenMinuteThird=outMinute;
 				/*
-				console.log(`駐車時間(0時から8時)：${betweenHourFirst}時間${betweenMinuteFirst}分`);
-				console.log(`駐車時間(8時から20時)：${betweenHourSecond}時間${betweenMinuteSecond}分`);
-				console.log(`駐車時間(20時から24時)：${betweenHourThird}時間${betweenMinuteThird}分`);*/
+				console.log(`駐車時間(0時から8時):${betweenHourFirst}時間${betweenMinuteFirst}分`);
+				console.log(`駐車時間(8時から20時):${betweenHourSecond}時間${betweenMinuteSecond}分`);
+				console.log(`駐車時間(20時から24時):${betweenHourThird}時間${betweenMinuteThird}分`);*/
 				priceFirst=betweenHourFirst*100+100;
 				priceSecond=priceMax;
 				priceThird=betweenHourThird*100+100;
@@ -166,8 +166,8 @@ function butotnClick(){
 				betweenHourSecond=outHour-20;
 				betweenMinuteSecond=outMinute;
 				/*
-				console.log(`駐車時間(0時から8時)：${betweenHourFirst}時間${betweenMinuteFirst}分`);
-				console.log(`駐車時間(8時から20時)：${betweenHourSecond}時間${betweenMinuteSecond}分`);*/
+				console.log(`駐車時間(0時から8時):${betweenHourFirst}時間${betweenMinuteFirst}分`);
+				console.log(`駐車時間(8時から20時):${betweenHourSecond}時間${betweenMinuteSecond}分`);*/
 				if(betweenMinuteFirst<30){
 					priceFirst=betweenHourFirst*200+100;
 				}else{
@@ -202,8 +202,8 @@ function butotnClick(){
 		
 		
 		/*
-		console.log(`駐車時間(1日目)：${betweenHourOneday}時間${betweenMinuteOneday}分`);
-		console.log(`駐車時間(2日目)：${betweenHourTwoday}時間${betweenMinuteTwoday}分`);*/
+		console.log(`駐車時間(1日目):${betweenHourOneday}時間${betweenMinuteOneday}分`);
+		console.log(`駐車時間(2日目):${betweenHourTwoday}時間${betweenMinuteTwoday}分`);*/
 		if(enterHour<8){
 			if(outHour<8){
 				betweenHourFirst=7-enterHour;
@@ -213,9 +213,9 @@ function butotnClick(){
 				betweenHourThird=outHour+4;
 				betweenMinuteThird=outMinute;
 				/*
-				console.log(`駐車時間(前日0時から前日8時)：${betweenHourFirst}時間${betweenMinuteFirst}分`);
-				console.log(`駐車時間(前日8時から前日20時)：${betweenHourSecond}時間${betweenMinuteSecond}分`);
-				console.log(`駐車時間(前日20時から8時)：${betweenHourThird}時間${betweenMinuteThird}分`);*/
+				console.log(`駐車時間(前日0時から前日8時):${betweenHourFirst}時間${betweenMinuteFirst}分`);
+				console.log(`駐車時間(前日8時から前日20時):${betweenHourSecond}時間${betweenMinuteSecond}分`);
+				console.log(`駐車時間(前日20時から8時):${betweenHourThird}時間${betweenMinuteThird}分`);*/
 				priceFirst=betweenHourFirst*100+100;
 				priceSecond=priceMax;
 				priceThird=betweenHourThird*100+100;
@@ -233,10 +233,10 @@ function butotnClick(){
 				betweenHourFourth=outHour-8;
 				betweenMinuteFourth=outMinute;
 				/*
-				console.log(`駐車時間(前日0時から前日8時)：${betweenHourFirst}時間${betweenMinuteFirst}分`);
-				console.log(`駐車時間(前日8時から前日20時)：${betweenHourSecond}時間${betweenMinuteSecond}分`);
-				console.log(`駐車時間(前日20時から8時)：${betweenHourThird}時間${betweenMinuteThird}分`);
-				console.log(`駐車時間(8時から20時)：${betweenHourFourth}時間${betweenMinuteFourth}分`);*/
+				console.log(`駐車時間(前日0時から前日8時):${betweenHourFirst}時間${betweenMinuteFirst}分`);
+				console.log(`駐車時間(前日8時から前日20時):${betweenHourSecond}時間${betweenMinuteSecond}分`);
+				console.log(`駐車時間(前日20時から8時):${betweenHourThird}時間${betweenMinuteThird}分`);
+				console.log(`駐車時間(8時から20時):${betweenHourFourth}時間${betweenMinuteFourth}分`);*/
 				priceFirst=betweenHourFirst*100+100;
 				priceSecond=priceMax;
 				priceThird=priceMax;
@@ -261,11 +261,11 @@ function butotnClick(){
 				betweenHourFifth=outHour-20;
 				betweenMinuteFifth=outMinute;
 				/*
-				console.log(`駐車時間(前日0時から前日8時)：${betweenHourFirst}時間${betweenMinuteFirst}分`);
-				console.log(`駐車時間(前日8時から前日20時)：${betweenHourSecond}時間${betweenMinuteSecond}分`);
-				console.log(`駐車時間(前日20時から8時)：${betweenHourThird}時間${betweenMinuteThird}分`);
-				console.log(`駐車時間(8時から20時)：${betweenHourFourth}時間${betweenMinuteFourth}分`);            
-				console.log(`駐車時間(20時から24時)：${betweenHourFifth}時間${betweenMinuteFifth}分`);*/
+				console.log(`駐車時間(前日0時から前日8時):${betweenHourFirst}時間${betweenMinuteFirst}分`);
+				console.log(`駐車時間(前日8時から前日20時):${betweenHourSecond}時間${betweenMinuteSecond}分`);
+				console.log(`駐車時間(前日20時から8時):${betweenHourThird}時間${betweenMinuteThird}分`);
+				console.log(`駐車時間(8時から20時):${betweenHourFourth}時間${betweenMinuteFourth}分`);            
+				console.log(`駐車時間(20時から24時):${betweenHourFifth}時間${betweenMinuteFifth}分`);*/
 				priceFirst=betweenHourFirst*100+100;
 				priceSecond=priceMax;
 				priceThird=priceMax;
@@ -280,8 +280,8 @@ function butotnClick(){
 				betweenHourSecond=outHour+4;
 				betweenMinuteSecond=outMinute;
 				/*
-				console.log(`駐車時間(前日8時から前日20時)：${betweenHourFirst}時間${betweenMinuteFirst}分`);
-				console.log(`駐車時間(前日20時から8時)：${betweenHourSecond}時間${betweenMinuteSecond}分`);*/
+				console.log(`駐車時間(前日8時から前日20時):${betweenHourFirst}時間${betweenMinuteFirst}分`);
+				console.log(`駐車時間(前日20時から8時):${betweenHourSecond}時間${betweenMinuteSecond}分`);*/
 				if(betweenMinuteFirst<30){
 					priceFirst=betweenHourFirst*200+100;
 				}else{
@@ -303,9 +303,9 @@ function butotnClick(){
 				betweenHourThird=outHour-8;
 				betweenMinuteThird=outMinute;
 				/*
-				console.log(`駐車時間(前日8時から前日20時)：${betweenHourFirst}時間${betweenMinuteFirst}分`);
-				console.log(`駐車時間(前日20時から8時)：${betweenHourSecond}時間${betweenMinuteSecond}分`);
-				console.log(`駐車時間(8時から20時)：${betweenHourThird}時間${betweenMinuteThird}分`);*/
+				console.log(`駐車時間(前日8時から前日20時):${betweenHourFirst}時間${betweenMinuteFirst}分`);
+				console.log(`駐車時間(前日20時から8時):${betweenHourSecond}時間${betweenMinuteSecond}分`);
+				console.log(`駐車時間(8時から20時):${betweenHourThird}時間${betweenMinuteThird}分`);*/
 				if(betweenMinuteFirst<30){
 					priceFirst=betweenHourFirst*200+100;
 				}else{
@@ -334,10 +334,10 @@ function butotnClick(){
 				betweenHourFourth=outHour-20;
 				betweenMinuteFourth=outMinute;
 				/*
-				console.log(`駐車時間(前日8時から前日20時)：${betweenHourFirst}時間${betweenMinuteFirst}分`);
-				console.log(`駐車時間(前日20時から8時)：${betweenHourSecond}時間${betweenMinuteSecond}分`);
-				console.log(`駐車時間(8時から20時)：${betweenHourThird}時間${betweenMinuteThird}分`);
-				console.log(`駐車時間(20時から24時)：${betweenHourFourth}時間${betweenMinuteFourth}分`);*/
+				console.log(`駐車時間(前日8時から前日20時):${betweenHourFirst}時間${betweenMinuteFirst}分`);
+				console.log(`駐車時間(前日20時から8時):${betweenHourSecond}時間${betweenMinuteSecond}分`);
+				console.log(`駐車時間(8時から20時):${betweenHourThird}時間${betweenMinuteThird}分`);
+				console.log(`駐車時間(20時から24時):${betweenHourFourth}時間${betweenMinuteFourth}分`);*/
 			
 				if(betweenMinuteFirst<30){
 					priceFirst=betweenHourFirst*200+100;
@@ -364,8 +364,8 @@ function butotnClick(){
 				betweenHourSecond=outHour-8;
 				betweenMinuteSecond=outMinute;
 				/*
-				console.log(`駐車時間(前日20時から8時)：${betweenHourFirst}時間${betweenMinuteFirst}分`);
-				console.log(`駐車時間(8時から20時)：${betweenHourSecond}時間${betweenMinuteSecond}分`);*/
+				console.log(`駐車時間(前日20時から8時):${betweenHourFirst}時間${betweenMinuteFirst}分`);
+				console.log(`駐車時間(8時から20時):${betweenHourSecond}時間${betweenMinuteSecond}分`);*/
 				priceFirst=betweenHourFirst*100+100;
 				if(priceFirst>1000){
 						priceFirst=priceMax;
@@ -387,9 +387,9 @@ function butotnClick(){
 				betweenHourThird=outHour-20;
 				betweenMinuteThird=outMinute;
 				/*
-				console.log(`駐車時間(前日20時から8時)：${betweenHourFirst}時間${betweenMinuteFirst}分`);
-				console.log(`駐車時間(8時から20時)：${betweenHourSecond}時間${betweenMinuteSecond}分`);
-				console.log(`駐車時間(20時から24時)：${betweenHourThird}時間${betweenMinuteThird}分`);*/
+				console.log(`駐車時間(前日20時から8時):${betweenHourFirst}時間${betweenMinuteFirst}分`);
+				console.log(`駐車時間(8時から20時):${betweenHourSecond}時間${betweenMinuteSecond}分`);
+				console.log(`駐車時間(20時から24時):${betweenHourThird}時間${betweenMinuteThird}分`);*/
 				priceFirst=betweenHourFirst*100+100;
 				if(priceFirst>1000){
 					priceFirst=priceMax;
@@ -419,7 +419,7 @@ function butotnClick(){
 		}
 		
 		/*
-		console.log(`(駐車時間1日目)：${betweenDayTimes[0].betweenHourDay}時間${betweenDayTimes[0].betweenMinuteDay}分`);
+		console.log(`(駐車時間1日目):${betweenDayTimes[0].betweenHourDay}時間${betweenDayTimes[0].betweenMinuteDay}分`);
 		for(let i=1; i<betweenDay; i++){  // 駐車時間24時間0分を繰り返す
 			console.log(`(駐車時間${i+1}日目)：${betweenDayTimes[1].betweenHourDay}時間${betweenDayTimes[1].betweenMinuteDay}分`);
 		}
@@ -629,16 +629,16 @@ function butotnClick(){
 		}
 	}
 	
-	console.log(`入庫：${enterMonth}月${enterDay}日 ${enterHour}:${enterMinute}`);
-	document.getElementById('enter').innerHTML = (`入庫：${enterMonth}月${enterDay}日 ${enterHour}時${enterMinute}分`);
-	console.log(`出庫：${outMonth}月${outDay}日 ${outHour}:${outMinute}`);
-	document.getElementById('out').innerHTML = (`出庫：${outMonth}月${outDay}日 ${outHour}時${outMinute}分`);
-	console.log(`駐車日数：${betweenDay}日`)
+	console.log(`入庫:${enterMonth}月${enterDay}日 ${enterHour}:${enterMinute}`);
+	document.getElementById('enter').innerHTML = (`入庫:${enterMonth}月${enterDay}日 ${enterHour}時${enterMinute}分`);
+	console.log(`出庫:${outMonth}月${outDay}日 ${outHour}:${outMinute}`);
+	document.getElementById('out').innerHTML = (`出庫:${outMonth}月${outDay}日 ${outHour}時${outMinute}分`);
+	console.log(`駐車日数:${betweenDay}日`)
 
-	console.log(`駐車時間合計：${betweenHour}時間${betweenMinute}分`);
-	console.log(`料金：${price}円`);
-	document.getElementById('parkTime').innerHTML = (`駐車時間：${betweenHour}時間${betweenMinute}分`);
-	document.getElementById('priceyen').innerHTML=(`料金：${price}円`);
+	console.log(`駐車時間合計:${betweenHour}時間${betweenMinute}分`);
+	console.log(`料金:${price}円`);
+	document.getElementById('parkTime').innerHTML = (`駐車時間:${betweenHour}時間${betweenMinute}分`);
+	document.getElementById('priceyen').innerHTML=(`料金:${price}円`);
 
 	if(betweenMonth>=2 || betweenDay>10){
     alert('ご利用は10日間までです。これを超える場合は、事前に事務所へ連絡をお願いします。');
