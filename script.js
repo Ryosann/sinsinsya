@@ -637,7 +637,7 @@ function butotnClick(){
 
 	console.log(`駐車時間合計：${betweenHour}時間${betweenMinute}分`);
 	console.log(`料金：${price}円`);
-	document.getElementById('parkTime').innerHTML = (`駐車時間合計：${betweenHour}時間${betweenMinute}分`);
+	document.getElementById('parkTime').innerHTML = (`駐車時間：${betweenHour}時間${betweenMinute}分`);
 	document.getElementById('priceyen').innerHTML=(`料金：${price}円`);
 
 	if(betweenMonth>=2 || betweenDay>10){
