@@ -81,7 +81,6 @@ function butotnClick(){
 	const outDay=Number(oday);
 	const outHour=Number(ohour.value);
 	const outMinute=Number(ominute.value);
-	betweenMonth=outMonth-enterMonth;
 
 	if(enterMonth===outMonth){
 		betweenDay=outDay-enterDay;
@@ -97,6 +96,8 @@ function butotnClick(){
 			betweenDay=30-enterDay+outDay;
 		}
 	}
+	const betweenMonth=outMonth-enterMonth;
+
 	const priceMax=1000;
 
 
