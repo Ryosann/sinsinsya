@@ -629,13 +629,20 @@ function butotnClick(){
 			}
 		}
 	}
+	// 5分未満無料
+	if(betweenHour===0 && betweenMinute<5){
+		price=0;
+	}
+	// 年をまたいだ時outMonthの出力が13月になってしまうので1月にする
+	if(outMonth===13){
+		outMonth=1;
+	}
 	
 	console.log(`入庫:${enterMonth}月${enterDay}日 ${enterHour}:${enterMinute}`);
 	document.getElementById('enter').innerHTML = (`入庫:${enterMonth}月${enterDay}日 ${enterHour}時${enterMinute}分`);
 	console.log(`出庫:${outMonth}月${outDay}日 ${outHour}:${outMinute}`);
 	document.getElementById('out').innerHTML = (`出庫:${outMonth}月${outDay}日 ${outHour}時${outMinute}分`);
 	console.log(`駐車日数:${betweenDay}日`)
-
 	console.log(`駐車時間合計:${betweenHour}時間${betweenMinute}分`);
 	console.log(`料金:${price}円`);
 	document.getElementById('parkTime').innerHTML = (`駐車時間:${betweenHour}時間${betweenMinute}分`);
