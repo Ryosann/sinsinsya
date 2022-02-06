@@ -60,23 +60,26 @@ selectOminute.options[date.getMinutes()].selected = true
 
 
 
-
 //料金計算ボタンがクリックされた時の処理
 function butotnClick(){  
 
 	//ここから料金計算
 	//計算は駐車時間10日間までを想定
-	//文字列の切り出し 最初の数字がずれてる気がするがなぞ
+	//文字列の切り出し
+	const eyear=enterCalendar.value.substr(0,4)
 	const emonth=enterCalendar.value.substr(5,2);
 	const eday=enterCalendar.value.substr(8,2);
+	const oyear=outCalendar.value.substr(0,4)
 	const omonth=outCalendar.value.substr(5,2);
 	const oday=outCalendar.value.substr(8,2);
 	//Number();で数値に変換、これをしないと文字列になる
+	const enterYear=Number(eyear);
 	const enterMonth=Number(emonth);  
 	const enterDay=Number(eday);
 	const enterHour=Number(ehour.value);
 	const enterMinute=Number(eminute.value);
 	//入庫から年をまたいで出庫月が1月だったら1月を13月とみなすからoutMonthはletで定義
+	const outYear=Number(oyear);
 	let outMonth=Number(omonth);
 	const outDay=Number(oday);
 	const outHour=Number(ohour.value);
@@ -90,12 +93,18 @@ function butotnClick(){
 		}          
 		if(enterMonth===1 || enterMonth===3 || enterMonth===5 || enterMonth===7 || enterMonth===8 || enterMonth===10 || enterMonth===12){
 			betweenDay=31-enterDay+outDay;
-		}else if(enterMonth===2){  //2月は28日までとする(うるう年は考慮してない)
-			betweenDay=28-enterDay+outDay;
+		}else if(enterMonth===2){  // 入庫月が2月の場合
+			if((enterYear%4===0 && enterYear%100!==0) || enterYear%400===0){  // うるう年の場合
+				betweenDay=29-enterDay+outDay;
+			}	
+			else{  // うるう年ではない場合
+				betweenDay=28-enterDay+outDay;
+			}	
 		}else{
 			betweenDay=30-enterDay+outDay;
 		}
 	}
+	const betweenYear=outYear-enterYear;
 	const betweenMonth=outMonth-enterMonth;
 
 	const priceMax=1000;
@@ -648,12 +657,13 @@ function butotnClick(){
 	document.getElementById('parkTime').innerHTML = (`駐車時間:${betweenHour}時間${betweenMinute}分`);
 	document.getElementById('priceyen').innerHTML=(`料金:${price}円`);
 
-	if(betweenMonth>=2 || betweenDay>10){
+	
+	if(betweenYear>=2 || betweenMonth>=2 || betweenDay>10){
     alert('ご利用は10日間までです。これを超える場合は、事前に事務所へ連絡をお願いします。');
 		//それまでの駐車時間合計と料金が消えるようにする
     document.getElementById('parkTime').innerHTML='';
     document.getElementById('priceyen').innerHTML='';
-  }else if(betweenMonth<0 || betweenDay<0 || betweenHour<0 || betweenMinute<0){
+  }else if(betweenYear<0 || betweenMonth<0 || betweenDay<0 || betweenHour<0 || betweenMinute<0){
     alert('出庫時間が入庫時間より前になっています。');
     document.getElementById('parkTime').innerHTML='';
     document.getElementById('priceyen').innerHTML='';
